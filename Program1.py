@@ -14,7 +14,7 @@
 # in different subjects.
 # 
 # Student Data:
- students = [
+students = [
       {"name": "Alice", "scores": {"Math": 85, "Science": 90, "English": 78}},
       {"name": "Bob", "scores": {"Math": 70, "Science": 88, "English": 82}},
       {"name": "Charlie", "scores": {"Math": 92, "Science": 81, "English": 89}},
@@ -26,25 +26,23 @@
 # 2. Stores these averages in a new dictionary where the student’s name is the key and their average score is the value.
 # 3. Prints the names of students whose average score is greater than 80.
 
-average_scores = {}
+average_score = {}
 for student in students:
     name = student["name"]
     scores = student["scores"].values()
     average = sum(scores) / len(scores)
-    average_scores[name] = average
+    average_score [name] = average
 
-print("Average Scores:", average_scores)
+print("Average Scores:", average_score)
 
 # Your task is to calculate the average scores for each student and print the names of students
 # whose average score is greater than 80.
 
 print("Students with average score > 80:")
-for name, avg in average_scores.items():
+for name, avg in average_score.items():
     if avg > 80:
         print(name)
 
-
-#Solution
 
 
 
